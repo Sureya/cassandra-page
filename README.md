@@ -48,12 +48,10 @@ I. CREATING SIMPLE TABLES
 
 
 1. Simple  CURD operations 
-
-CREATE TABLE student_details(
+### CREATE TABLE student_details(
 student_id varchar PRIMARY KEY,
 class_name text,
 department text,
 
 );
-
 
