@@ -39,6 +39,8 @@ Starting Cassandra Service:
 
 > [Step 5] : CREATE KEYSPACE YourKeySpace
   WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+  
+  
 >[Step 6] : use  YourKeySpace
 
 Note: Creating keyspace is a onetime operation, once you have created the keyspace you can just starting using it. For creating new keyspaces you can follow same steps as mentioned above.
