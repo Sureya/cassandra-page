@@ -87,6 +87,19 @@ public class BeginnerLevelCode {
     }
 
 
+    public static void updateTable(){
+        try{
+
+            session = cluster.connect("sampleKeySpace");
+            PreparedStatement statement = session.prepare("INSERT INTO student (roll_number, Name, ClassName, Department,Score)VALUES (?,?,?,?,?);");
+            BoundStatement boundStatement = new BoundStatement(statement);
+            session.execute(boundStatement.bind("CAS101","JackAss","CSE-A","CSE",10167));
+        }catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+
     public static void retriveByColumn(String columnName, String columnValue,String TableName){
 
         /*
