@@ -6,8 +6,9 @@ import com.datastax.driver.core.Session;
 import com.datastax.driver.core.policies.DCAwareRoundRobinPolicy;
 import com.datastax.driver.core.policies.DefaultRetryPolicy;
 import com.datastax.driver.core.policies.TokenAwarePolicy;
-import org.slf4j.LoggerFactory;
 
+
+import java.net.ConnectException;
 import java.util.*;
 
 /**
@@ -96,6 +97,7 @@ public class CassandraConnector
         }
 
     }
+
 
 
 }

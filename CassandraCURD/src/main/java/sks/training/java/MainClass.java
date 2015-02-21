@@ -24,8 +24,15 @@ public class MainClass {
 
         Set<String> set = new HashSet<String>(primaryKey);
 
-        CassandraConnector.createTable(tableName, "dsp", columDefenitions, set);
+        //Create
+        CassandraConnector.createTable(tableName, "sampleKeySpace", columDefenitions, set);
         // replace "dsp" with your key-space name.
+
+        //Update
+
+
+
+
 
     }
 }
