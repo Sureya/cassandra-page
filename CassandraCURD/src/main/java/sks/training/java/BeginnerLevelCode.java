@@ -79,7 +79,7 @@ public class BeginnerLevelCode {
             }
 
             session.close();
-            // It would be best practise to always shut things up once you are done with it.
+            // It would be best practice to always shut things up once you are done with it.
 
         } catch (Exception exp) {
             System.out.println(exp.getMessage());
@@ -103,7 +103,7 @@ public class BeginnerLevelCode {
     public static void retriveByColumn(String columnName, String columnValue,String TableName){
 
         /*
-        By default this function will throw an error. Because you have roll_number as primary key
+        By default this function will throw an error. Because, you have only "roll_number" as primary key
 
         Hence,
 
@@ -115,7 +115,7 @@ public class BeginnerLevelCode {
 
             *  CREATE INDEX name ON student (Name);
 
-               By doing so we can execute this function without any issues.
+               By doing so we can execute this function without any issues and also any other columns other than primary keys can be indexed.
          */
 
         try{
