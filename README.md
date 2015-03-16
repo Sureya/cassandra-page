@@ -30,18 +30,12 @@ Starting Cassandra Service:
 
 > Open  Terminal :
 > [Step 1] : Download and extract Cassandra from above link:
-
 > [Step 2] : cd /path/to/extracted/folder
-[Step 3] : bin/cassandra -f 
-
+> [Step 3] : bin/cassandra -f 
 > [Step 4] : In another terminal type : ./bin/cqlsh
-
-
 > [Step 5] : CREATE KEYSPACE YourKeySpace
   WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
-  
-  
->[Step 6] : Type : <use  YourKeySpace>
+> [Step 6] : Type : <use  YourKeySpace>
 
 Note: Creating keyspace is a onetime operation, once you have created the keyspace you can just starting using it. For creating new keyspaces you can follow same steps as mentioned above.
 
